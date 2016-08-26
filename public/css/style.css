@@ -1,0 +1,23 @@
+button.mfp-close{
+    background: #fff !important;
+}
+
+.fa-trash{
+    font-size: 191%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.46);
+    padding: 8px;
+}
+.fa-trash:hover{
+    background: #000;
+    color: red;
+}
+.img {
+    list-style-type: none;
+}
+
+.img li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px;
+}
