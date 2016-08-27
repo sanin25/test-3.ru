@@ -19,10 +19,11 @@ Route::auth();
 
 Route::get('/admin', 'adminController@index');
 
-Route::group(["profix" => "admin"], function(){
+Route::group(["" => "admin"], function(){
     Route::get("addpage", [
         "as" => "addPage",
         "uses" => "AdminController@addpage",
     ]);
     Route::post("/savepage",["as" => "savePage", "uses" => "adminController@savepage"]);
+    Route::get("/getpage",["as" => "getPage", "uses" => "adminController@getpage"]);
 });
